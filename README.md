@@ -24,7 +24,7 @@ If you restart the mock, event ids go back to 0. The app picks that up and reloa
 
 ## Live demo
 
-Demo: _add your Vercel URL here_
+Demo: https://supervisor-console-beta.vercel.app/
 
 Mock runs as-is on Render, app is on Vercel. Only [render.yaml](render.yaml) and [vercel.json](vercel.json) were added for that, no code changes.
 
