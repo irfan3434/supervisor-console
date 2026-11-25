@@ -30,7 +30,6 @@ Mock runs as-is on Render, app is on Vercel. Only [render.yaml](render.yaml) and
 
 Free Render instance sleeps after ~15 min, so the first load can take 30-60s. Hit Retry if the list errors out.
 
-To deploy: Render → New → Blueprint → this repo. Copy the service URL. Then import the repo in Vercel and set `VITE_API_URL` to that URL (no trailing slash) before deploying. It's read at build time, so if the URL changes, redeploy.
 
 ## Layout
 
