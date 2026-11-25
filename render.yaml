@@ -1,0 +1,14 @@
+# Render Blueprint: hosts the unchanged mock server for the live demo.
+# The mock only uses Node built-ins, so nothing needs installing. Render sets PORT,
+# which the mock already reads (falls back to 4000 locally).
+services:
+  - type: web
+    name: supervisor-console-mock
+    runtime: node
+    plan: free
+    buildCommand: echo "No build step needed for the mock server"
+    startCommand: node mock-server.mjs
+    healthCheckPath: /conversations
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
